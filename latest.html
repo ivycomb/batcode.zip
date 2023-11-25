@@ -1,0 +1,285 @@
+<head>
+<title>VIVA/root/memory</title>
+<style>
+.meme {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 20px;
+  max-width: 700px; /* Set the maximum width */
+  width: 100%; /* Occupy available space */
+  text-align: center;
+  cursor: default;
+}
+
+.writing {
+font-size: 15px;
+color: white;
+  font-family: Tahoma, Geneva, sans-serif;
+  cursor: default;}
+
+.chapter {
+font-size: 30px;
+color: white;
+  font-family: Tahoma, Geneva, sans-serif;
+  cursor: default;}
+	
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+}
+
+p::selection {
+	background: #ffffff}
+	
+object::selection {
+	background: #ffffff}
+	
+span::selection {
+	background: #ffffff}
+	
+a::selection {
+	background: #ffffff}
+	
+a {
+	color: white;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 20px}
+
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.slide-in-elliptic-top-fwd {
+	-webkit-animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.2s both;
+	        animation: slide-in-elliptic-top-fwd 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.2s both;
+			
+}
+
+@-webkit-keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-top-fwd {
+  0% {
+    -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+            transform: translateY(-600px) rotateX(-30deg) scale(0);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+            transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 1400px;
+            transform-origin: 50% 1400px;
+    opacity: 1;
+  }
+}
+
+/* Shutter Out Horizontal */
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #a658ff;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #522387;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+  color: white;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@-webkit-keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes hvr-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.hvr-wobble-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-wobble-horizontal:hover, .hvr-wobble-horizontal:focus, .hvr-wobble-horizontal:active {
+  -webkit-animation-name: hvr-wobble-horizontal;
+  animation-name: hvr-wobble-horizontal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: white;
+}
+
+::selection {
+  color: black;
+  background: white;
+}
+
+</style>
+<link rel="shortcut icon" type="image/png" href="fav.png"/>
+</head>
+<body bgcolor="#a658ff">
+	<div class="meme">
+	
+	<span class="chapter">PROLOGUE/2</span>
+	<p class="tracking-in-expand">
+		<span class="writing"><!-- VIVA/FINN -->I did what I think anybody my age would have done... I cried. A lot, actually. I remember this much pretty clearly. To be abundantly clear, testers were not the only group here. There were also caretakers. I didn't have a good name for them other than that, but they were also sapiens as I now know them, but in different attire. Most of them just wore casual clothes and were very nice to me. <br><br>Oftentimes it didn't actually feel like they were members of the same species.
+		<br>There was a shorter one. Honestly compared to me she was pretty tall but... for her species she seemed really short. She checked on me every day, would ask me how I was doing, and make sure that anything that went wrong would get fixed. She actually cared about us, and at a time when nothing else made much sense... it went a long way. But...
+		<br> Well, I don't quite remember. I think that a guard or maybe one of the testers grabbed her, but regardless, she was taken away from me. No matter how much I cried about it they assured me that she would be back soon once the testing was done, but I had <i>never</i> seen them do that before. They would usually keep the caretakers in the room with us, but for some reason today wasn't a day they were "allowed to," according to them.<!-- VIVA/MELLI --> i hope you're okay now mary
+		<!-- VIVA/FINN --><br><br>It was just all so disorderly, and I think it made the panic worse. There were so many more of the testers around than usual, a group of five of them had to work together to strap me into one of their testing apparatuses. I don't remember their names, but I wasn't the only vesper there, there were two others with me. One of which was a bit older than me, but he was just kind of... there. He didn't look like he was present, his head was slumped down and he wasn't responding when I called his name. I remember crying about it, but not much more. Everything starts becoming hazy around here. I think that they hooked up some of those things that let you measure your pulse, an IV, and... well, I really don't remember much more. It all sort of fades into a messy blob of ideas and voices.
+		<br><br>
+		And then one of the testers made a critical error.
+		</span>
+	<br>
+	<br>
+	<a href="https://batcode.zip/1.html" class="hvr-shutter-out-horizontal hvr-grow">
+		<span class="hvr-shutter-out-horizontal hvr-grow"><b> Previous Page </b></span>
+	</a>
+	</p>
+
+<script>document.title = 'andromeda';
+</script>
+</div>
